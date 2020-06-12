@@ -1,0 +1,21 @@
+[client]
+default-character-set=utf8
+
+[mysql]
+default-character-set=utf8
+
+[mysqld]
+collation-server=utf8_general_ci
+character-set-server=utf8
+init-connect='SET NAMES utf8'
+# 表名不区分大小写
+lower_case_table_names=1 
+#server-id=1
+datadir=/var/lib/mysql
+#socket=/var/lib/mysql/mysqlx.sock
+#symbolic-links=0
+# sql_mode=NO_ENGINE_SUBSTITUTION,STRICT_TRANS_TABLES
+
+[mysqld_safe]
+log-error=/var/log/mysqld.log
+pid-file=/var/run/mysqld/mysqld.pid
