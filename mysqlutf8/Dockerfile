@@ -11,6 +11,7 @@ RUN apt update \
     && ln -sf /usr/share/zoneinfo/${TZ} /etc/localtime \
     # 使配置生效
     && dpkg-reconfigure -f noninteractive tzdata \
+    # 清理临时文件
     && rm -rf /var/lib/apt/lists/*
 
 # 复制所需文件
