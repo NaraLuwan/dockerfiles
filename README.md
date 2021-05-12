@@ -1,1 +1,1 @@
-Record some dockerfiles I used.
+**记录用过的docker文件，用于生产环境请慎重。**
